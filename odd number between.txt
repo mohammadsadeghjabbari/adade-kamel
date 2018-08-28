@@ -1,0 +1,23 @@
+namespace the_odd_number_between__a_and_b
+{
+    class Program
+    {
+        private static int i;
+
+        static void Main(string[] args)
+        {
+            Console.WriteLine("first number:");
+            int a = int.Parse(Console.ReadLine());
+            Console.WriteLine("second number:");
+            int b = int.Parse(Console.ReadLine());
+            for (int i = a; i <= b; i++)
+            {
+                if (i % 2 == 1)
+                {
+                    Console.WriteLine("{0}",i );
+                    Console.ReadKey();
+                }
+        }
+    }
+}
+    }
