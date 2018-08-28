@@ -1,0 +1,35 @@
+namespace reverce_array
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] a = new int[5];
+            Console.WriteLine("adade aval");
+            a[0] = int.Parse(Console.ReadLine());
+            Console.WriteLine("adade dovom");
+            a[1] = int.Parse(Console.ReadLine());
+            Console.WriteLine("adade sevom");
+            a[2] = int.Parse(Console.ReadLine());
+            Console.WriteLine("adade chaharom");
+            a[3] = int.Parse(Console.ReadLine());
+            Console.WriteLine("adade akhar");
+            a[4] = int.Parse(Console.ReadLine());
+            foreach (int b in a)
+
+            {
+                Console.WriteLine(b);
+
+            }
+
+            Array.Reverse(a);
+            foreach (int value in a)
+            {
+                Console.WriteLine(value);
+            }
+            {
+                Console.ReadKey();
+            }
+        }
+    }
+}
