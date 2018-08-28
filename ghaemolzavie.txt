@@ -1,0 +1,28 @@
+namespace Detecting_the_triangle_of_the_equilibrium
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Input side 1 of triangle: ");
+             int a = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Input side 2 of triangle: ");
+             int b = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Input side 3 of triangle: ");
+            int c = Convert.ToInt32(Console.ReadLine());
+            if ((a * a == b * b + c * c) || (b * b == a * a + c * c) || (c * c == a * a + b * b))
+            {
+                Console.WriteLine("ghaem olzavie ast");
+            }
+            else
+            {
+                Console.WriteLine("ghaem olzavie nist");
+            }
+            Console.ReadKey();
+
+
+        }
+    }
+}
