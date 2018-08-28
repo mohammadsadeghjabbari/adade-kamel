@@ -1,0 +1,22 @@
+namespace five_number_bigger_than_1000__average
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int [] a = new int[5]
+            a[0]  = 1009;
+            a[1]  = 1013;
+            a[2]  = 1021;
+            a[3] = 1031;
+            a[4] = 1033;
+
+            {
+                Console.WriteLine((a[0]+ a[1]+a[2]+a[3]+a[4]) / 5);
+            }
+            
+                Console.ReadKey();
+            
+        }
+    }
+}
