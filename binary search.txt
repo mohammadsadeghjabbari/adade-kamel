@@ -1,0 +1,75 @@
+namespace sorting_and_bianary_search
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int n, i, j, tmp;
+            int[] arr1 = new int[10];
+           
+            Console.Write("Input the size of array : ");
+            n = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Input {0} elements in the array :\n", n);
+            for (i = 0; i < n; i++)
+            {
+                Console.Write("element - {0} : ", i);
+                arr1[i] = Convert.ToInt32(Console.ReadLine());
+            }
+
+            for (i = 0; i < n; i++)
+            {
+                for (j = i + 1; j < n; j++)
+                {
+                    if (arr1[j] < arr1[i])
+                    {
+                        tmp = arr1[i];
+                        arr1[i] = arr1[j];
+                        arr1[j] = tmp;
+                    }
+                }
+            }
+            Console.Write("\nsorted array is:\n");
+            for (i = 0; i < n; i++)
+            {
+                Console.Write("{0}  ", arr1[i]);
+
+
+
+            }
+            int first = arr1[0];
+            int last = arr1[n];
+            int mid;
+            int target;
+
+            Console.WriteLine("searching your number");
+            target = int.Parse(Console.ReadLine());
+            while (first <= last)
+            {
+                mid = (first + last) / 2;
+
+                if (target < arr1[mid])
+                {
+                    first = mid + 1;
+                }
+
+                if (target > arr1[mid])
+                {
+                    last = mid - 1;
+                }
+
+                else
+                {
+                    Console.WriteLine("adadeshoa mojood ast");
+                }
+            }
+
+
+
+
+            Console.ReadKey();
+
+        }
+
+    }
+}
