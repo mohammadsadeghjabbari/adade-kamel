@@ -1,0 +1,32 @@
+namespace student_level
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("please enter your score if your score was very good your level is E . if your score was good your level is D . if your score was so so your level is C .  if your score was bad your level is B . and if your score was very bad your level is A.   ");
+            int a = Convert.ToInt16(Console.ReadLine());
+            if (a <= 10)
+            {
+                Console.WriteLine("A");
+            }
+            if (10 < a && a < 13) 
+            {
+                Console.WriteLine("B");
+            }
+            if (12 < a && a < 15)
+            {
+                Console.WriteLine("C");
+            }
+            if (14 < a && a < 16)
+            {
+                Console.WriteLine("D");
+            }
+            if (15 < a && a < 20)
+            {
+                Console.WriteLine("E");
+            }
+            Console.ReadKey();
+        }
+    }
+}
