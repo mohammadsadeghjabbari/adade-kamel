@@ -1,0 +1,35 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace n_⁄‰’—_«Ê·_”—Ì_›Ì»Ê‰«çÌ
+{
+    class Program
+    {
+        public static int Fibonacci(int n)
+        {
+            int a = 0;
+            int b = 1;
+            for (int i = 0; i < n; i++)
+            {
+                int temp = a;
+                a = b;
+                b += temp;
+            }
+            return a;
+        }
+
+        static void Main()
+        {
+            Console.WriteLine("please enter number of n");
+            int n = int.Parse(Console.ReadLine());
+            for (int i = 0; i < n; i++)
+            {
+                Console.WriteLine(Fibonacci(i));
+            }
+            Console.ReadLine();
+
+        }
+    }
